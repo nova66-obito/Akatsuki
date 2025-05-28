@@ -1,0 +1,37 @@
+@import url("https://fonts.cdnfonts.com/css/gang-of-three");
+@import url("https://fonts.googleapis.com/css2?family=Inder&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  font-family: "Inder", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+:root {
+  --prime: #0b0b0b;
+  --sec: #ffff;
+  --fot: #121828;
+  --txt:#D32F2F;
+  --head:'Gang of Three', sans-serif;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.col-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.full{
+  background: var(--prime);
+  color: var(--sec);
+}
+.full > h1{
+  font-family: var(--head);
+  font-size: 30px;
+}

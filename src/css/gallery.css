@@ -1,0 +1,56 @@
+.gallery-page{
+    min-height: 100vh;
+    width: 100%;
+    padding-top:100px;
+    padding-bottom: 20px;
+    gap: 20px;
+}
+.gallery-page > .g-cover{
+  width: 100%;
+  flex-wrap: wrap;
+  gap:20px;
+}
+.g-box{
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.g-box > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    &:hover{
+        transform: scale(1.1);
+        transition: all 0.6s;
+        filter: brightness(60%);
+    }
+}
+.btn-body{
+    gap: 20px;
+}
+.btn-body > button{
+   padding: 10px 30px;
+   font-family: var(--head);
+   background: var(--txt);
+   border: none;
+   box-shadow: inset 0 0 5px black;
+   border-radius: 10px;
+   color: white;
+}
+
+@media screen and (max-width:700px) {
+    .gallery-page{
+        padding-top:80px ;
+    } 
+    .g-box{
+        width: 40%;
+        border-radius: 10px;
+        height: 130px;
+     }
+     .gallery-page >.g-cover{
+        padding: 0;
+        gap: 10px;
+     }
+}

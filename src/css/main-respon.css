@@ -1,0 +1,193 @@
+@media screen and (max-width: 700px) and (min-width: 300px) {
+  /* video */
+  .full > h1{
+    font-size: 20px;
+  }
+  .v-holder {
+    min-height: 40dvh;
+  }
+  .v-main > video{
+   padding-top: 85px;
+  }
+  .v-txt{
+    top: 100px;
+  }
+  .v-txt > .v-bot {
+    width: 60px;
+    height: 60px;
+  }
+  .v-b-txt > p {
+    font-size: 10px;
+    padding: 0 10px;
+  }
+  .v-b-txt > h1{
+    font-size: 15px;
+  }
+  .v-b-txt > button{
+    margin-top: 5px;
+    font-size: 10px;
+    padding: 5px 8px;
+  }
+  /* intro */
+  .intro {
+    padding: 10px;
+    flex-direction: column;
+  }
+  .i-txt > h1{
+     align-self: center;
+  }
+  .intro > div {
+    width: 100%;
+    min-height: 300px;
+  }
+  .i-txt > p {
+    font-size: 15px;
+  }
+  .i-txt {
+    padding: 5px;
+    height: 440px;
+  }
+  .i-txt > h1 {
+    font-size: 20px;
+  }
+  .i-pic {
+    justify-content: center;
+  }
+  .i-pic > img {
+    height: fit-content;
+    width: 100%;
+  }
+  /* member */
+  .member {
+    padding: 30px 1px;
+  }
+  .mem-holder {
+    gap: 20px;
+  }
+  .mem-box {
+    width: 140px;
+    height: 160px;
+    border-radius: 10px;
+  }
+  .m-top > img {
+    width: 45px;
+    height: 80px;
+  }
+  .m-bot > h3 {
+    font-size: 16px;
+  }
+  .m-bot > P {
+    font-size: 8px;
+  }
+  /* lore */
+  .lore{
+    padding: 30px 0;
+    gap: 10px;
+  }
+  .lo-c-top {
+    flex-direction: column;
+  }
+  .lo-c-top > div {
+    width: 90%;
+    min-height: 160px;
+  }
+  .lo-pic > img {
+    height: 150px;
+  }
+  .lo-txt > h1{
+    font-size: 15px;
+    padding-bottom: 8px;
+  }
+  .lo-txt > p,
+  .lo-c-bot > p {
+    font-size: 15px;
+  }
+  .lo-c-bot{
+    width: 90%;
+    padding: 10px;
+    padding-top: 0;
+  }
+  /* 2nd box */
+.lo-cover2 > .lo-c-top >.lo-pic{
+   order: 0;
+} 
+  /* gallrey */
+  .g-sub2{
+    display: none;
+  }
+  .g-cover > .g-sub{
+    width: 50%;
+    height: 100vh;
+     padding: 5px;
+  }
+   .g-sub > .g-hold{
+    border-radius: 10px;
+  }
+  .gallery{
+    gap: 10px;
+  }
+  .gh-1:last-child,.gh-1:nth-child(4){
+    display: block;
+    height: 10%;
+  }
+  .gh-3:last-child,.gh-3:nth-child(4){
+    display: block;
+    height: 10%;
+  }
+}
+/* this for the tablet */
+@media screen and (max-width: 900px) and (min-width: 700px) {
+  .i-txt > p {
+    font-size: 15px;
+  }
+  .i-txt {
+    padding: 5px;
+  }
+  .i-txt > h1 {
+    font-size: 20px;
+  }
+  .i-pic > img {
+    height: auto;
+  }
+  .intro{
+    padding: 10px;
+  }
+  .v-main > video{
+    padding-top:100px;
+  }
+  .intro > div {
+    width: 100%;
+    min-height: 330px;
+  }
+  .lo-txt > p , .lo-c-bot > p{
+    font-size: 15px;
+  }
+  .lo-txt > h1{
+    font-size: 20px;
+  }
+  .lo-pic > img{
+      height: 210px;
+  }
+  /* lore */
+  .lore{
+    gap: 15px;
+  }
+  .mem-box{
+    width:225px;
+  }
+  /* gallery */
+  .gallery{
+    gap: 15px;
+  }
+  .g-cover > .g-sub{
+    height: 80vh;
+  }
+  .g-sub > .g-hold{
+    border-radius: 15px;
+  }
+}
+@media screen and (max-width: 1180px) and (min-width: 900px) {
+.i-txt > p {
+  font-size: 20px !important;
+}
+}

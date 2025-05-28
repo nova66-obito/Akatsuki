@@ -1,0 +1,238 @@
+.overall{
+    background: var(--prime);
+}
+.v-holder{
+    min-height: 100dvh;
+    position: relative;
+    background: var(--prime);
+    padding-bottom:20px ;
+}
+.v-holder > div{
+    position: absolute;
+}
+.v-main > video{
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+    object-fit: cover;
+}
+.v-txt{
+    gap: 25px;
+    top: 46%;
+}
+/* this for the video older text */
+.v-b-txt > h1{
+    color: var(--sec);
+    font-family: var(--head);
+    margin-bottom: 5px;
+    font-size: 40px;
+}
+.v-b-txt > p{
+    font-size: 20px;
+    color: var(--txt);
+    text-align: center;
+    padding: 3px;
+    font-weight: bold;
+}
+.v-b-txt button{
+    margin-top: 15px;
+    padding: 8px 10px;
+    border-radius: 10px;
+    border: none;
+    background: var(--txt);
+    cursor: pointer;
+    color:var(--sec);
+    font-weight: bolder;
+    box-shadow: inset 0 0 5px black;
+}
+/* ----------------------------------------------------------- */
+/* this for the intro */
+.intro{
+  background: var(--prime);
+  padding: 100px 30px;
+  justify-content: space-evenly;
+}
+.i-txt{
+    height:500px;
+    padding: 30px;
+    gap: 30px;
+    width: 50%;
+}
+.i-txt > h1{
+    align-self: flex-start;
+    position: relative;
+    font-family: var(--head);
+}
+.i-txt > h1:after{
+   content: "";
+   width: 100%;
+   position: absolute;
+   height: 4px;
+   background: var(--txt);
+   bottom:-10px;
+   left: 0;
+}
+.i-txt > p{
+    font-size: 23px;
+    font-family: "Robto";
+    font-weight: 400;
+    letter-spacing: 1px;
+} 
+.i-pic
+{
+    justify-content: end;
+    width: 40%;
+}
+.i-pic > img{
+    width: 90%;
+    height: 500px;
+}
+/* member */
+.member
+{
+  padding: 55px 0;
+  background: url(../assets/bg.png) no-repeat;
+  background-position: center;
+  background-size: cover;
+  gap: 30px;
+}
+/* pic */
+.m-top >img{
+    width: 80px;
+    height: 130px;
+    object-fit: contain;
+}
+.mem-holder{
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.mem-box{
+    width: 250px;
+    height: 220px;
+    border-radius:20px;
+    border: 3px solid white;
+    background: #D9D9D933;
+    cursor: pointer;
+}
+.m-bot > h3{
+  font-family: var(--head);
+  padding: 5px 0;
+}
+.m-bot > p{
+    text-align: center;
+    color: rgb(255, 255, 255,0.4);
+}
+.m-bot > p::after{
+  content: ")";
+}
+.m-bot > p::before{
+    content: "(";
+}
+.mem-box:hover > .m-top > img{
+  scale: 1.1;
+  filter: drop-shadow(0 0 5px var(--txt));
+}
+.mem-box:hover > .m-bot > h3{
+   text-decoration: underline red;
+}
+/* ---------------------------------------------------------------------- */
+/* lore */
+.lore{
+    padding: 53px 0;
+    gap: 30px;
+}
+.lo-c-top{
+    padding: 10px;
+    justify-content: space-evenly;
+}
+.lo-c-top > div{
+  width: 45%;
+  min-height: 200px;
+}
+.lo-pic > img{
+  width: 100%;
+  height: 280px;
+}
+.lo-txt > p , .lo-c-bot > p{
+    font-size: 24px;
+    font-family: "Robot";
+    letter-spacing: 1px;
+}
+.lo-txt > h1{
+    font-family:var(--head);
+    padding-bottom: 20px;
+}
+/* this for the bottom */
+.lo-c-bot{
+    padding: 10px;
+    padding-left: 35px;
+}
+/* 2nd box */
+ .lo-cover2 > .lo-c-top >.lo-pic{
+   order: 1;
+}
+/*gallrey*/
+.gallery{
+    gap: 30px;
+}
+.g-cover{
+  width: 100%;
+  padding: 10px;
+}
+.g-cover > .g-sub{
+    width: 35%;
+    height: 150vh;
+    overflow: hidden;
+    gap: 10px;
+    padding: 10px;
+}
+.g-sub > .g-hold{
+    width: 100%;
+    border-radius: 25px;
+    overflow: hidden;
+}
+/* first box */
+.gh-1:first-child,.gh-1:nth-child(3){
+   height: 40%;
+}
+.gh-1:nth-child(2){
+    height: 20%;
+}
+.gh-1:last-child,.gh-1:nth-child(4){
+    display: none;
+}
+/* sec box */
+.gh-2:first-child,.gh-2:last-child{
+    height: 15%;
+}
+.gh-2:nth-child(2){
+    height: 35%;
+}
+.gh-2:nth-child(3){
+    height: 40%;
+}
+/* thrid box */
+.gh-3:first-child{
+    height: 20%;
+}
+.gh-3:nth-child(3){
+    height: 30%;
+}
+.gh-3:nth-child(2){
+    height: 50%;
+}
+.gh-3:last-child,.gh-3:nth-child(4){
+    display: none;
+}
+
+/* this for the image */
+.g-hold > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.g-hold >img:hover{
+    scale: 1.2;
+    cursor: pointer;
+    transition: all 0.5s;
+}

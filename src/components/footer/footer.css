@@ -1,0 +1,16 @@
+footer{
+    background: var(--fot);
+    padding: 20px 0;
+    color: white;
+}
+footer > h2{
+    font-family: var(--head);
+}
+@media screen and (max-width:700px) {
+    footer > h2{
+        font-size: 10px;
+    }
+    footer{
+        padding: 10px 0;
+    }
+}

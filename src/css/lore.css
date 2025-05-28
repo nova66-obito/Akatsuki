@@ -1,0 +1,124 @@
+.lore-page {
+   padding-top: 100px;
+   padding-bottom: 20px;
+   gap: 40px;
+}
+.box-story > .l-box{
+  width: 50%;
+  padding: 20px;
+}
+.l-pic > img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.l-txt{
+    align-items: flex-start;
+}
+.l-txt > p{
+    font-size: 22px;
+    padding-bottom: 10px;
+}
+.l-txt > p::before{
+    content: "⭐";
+}
+.l-txt > h1{
+   padding-bottom: 10px;
+}
+/* creater */
+.creater{
+    gap: 20px;
+}
+.creater > div{
+   width: 90%;
+}
+.creater > .found-img {
+   height: 350px; 
+   border-radius: 20px;
+   overflow: hidden;
+   width: 50%;
+}
+.found-img > img{
+    width: 100%;
+    height: 100%;
+}
+.top-s-lore{
+  gap: 10px;
+}
+/* link */
+.story-link > a > button{
+   padding: 10px 30px;
+   font-family: var(--head);
+   background: var(--txt);
+   border: none;
+   box-shadow: inset 0 0 5px black;
+   border-radius: 10px;
+
+}
+/* tab */
+@media screen and (min-width:700px) and (max-width:900px) {
+  .lore-page{
+    gap: 20px;
+  }
+  .box-story{
+    padding: 0 20px;
+    gap: 10px;
+  }
+  .box-story > .l-box{
+    padding: 0px;
+  }
+  .l-txt{
+    padding: 10px;
+  }
+    .l-txt > p{
+    font-size: 14px;
+    padding-bottom: 5px;
+}
+.l-txt > h1{
+   padding-bottom: 5px;
+   font-size: 20px;
+}
+.creater{
+    gap: 10px;
+}
+.creater > .found-img{
+    height: 250px;
+    width: 70%;
+ }
+}
+@media screen and (max-width:700px) {
+    .lore-page{
+        gap: 10px;
+        padding-top: 80px;
+        padding-bottom: 20px;
+    }
+    .box-story {
+        padding: 0;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .box-story > .l-box{
+      width: 90%;
+      padding: 0px;
+     }
+      .l-txt > p{
+    font-size: 14px;
+    padding-bottom: 5px;
+}
+.l-txt > h1{
+   padding-bottom: 5px;
+   font-size: 20px;
+}
+ .creater > .found-img{
+    height: 180px;
+    width: 90%;
+ }
+ .creater > h1{
+    text-align: center;
+ }
+ .creater{
+    gap: 10px;
+ }
+}

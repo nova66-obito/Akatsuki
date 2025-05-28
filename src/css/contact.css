@@ -1,0 +1,23 @@
+.contact-page{
+    padding-top: 120px;
+}
+.s-cover{
+    width: 100%;
+}
+
+.c-s-meida {
+    gap:20px
+}
+.c-s-meida > b{
+    font-family: var(--head);
+    font-size: 20px;
+}
+.suc-cover{
+    min-height: 300px;
+    width: 100%;
+}
+@media screen and (max-width:700px) {
+    .contact-page{
+        padding-top: 80px;
+    }
+}
