@@ -99,7 +99,7 @@ export default function Main() {
                         <p>The Akatsuki, originally formed by Yahiko during the Third Great Ninja War, began as a group seeking peace for the war-torn Hidden Rain Village. However, after Yahiko's death, leadership passed to Nagato (Pain), and the group’s ideology shifted drastically. Under Nagato, the Akatsuki became a powerful rogue organization with the goal of capturing all the tailed beasts to create a weapon of mass destruction, which they believed would force the world into peace through fear. The group left a lasting legacy as one of the most dangerous threats to the ninja world, influencing major events and battles, and ultimately playing a crucial role in uniting the shinobi nations against a common enemy.</p>
                     </motion.div>
                     <motion.div
-                        initial={{ opacity: 0, x: 50 }}
+                        initial={{ opacity: 0, x: -50 }}
                         whileInView={{ opacity: 1, x: 0, transition: { delay: 0.4, duration: 0.5 } }}
                         viewport={{ once: false ,amount:.5}}
                         className="i-box i-pic center">
