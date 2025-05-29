@@ -3,7 +3,7 @@ import "../css/main.css";
 import "../css/main-respon.css";
 import Contact from "../components/form/contact";
 import Mod from "../assets/model1.png";
-import { TbPlayerPlayFilled } from "react-icons/tb";
+import { motion } from "framer-motion";
 // image member
 import Pic1 from "../assets/pain.png";
 import Pic2 from "../assets/dara.png";
@@ -31,7 +31,7 @@ import g8 from "../assets/g8.jpg";
 import g9 from "../assets/g9.jpg";
 import g10 from "../assets/g10.jpg";
 // video
-import v1 from "../assets/mvid.mp4" 
+import v1 from "../assets/mvid.mp4"
 export default function Main() {
     // memeber
     const member = [
@@ -76,22 +76,35 @@ export default function Main() {
                         <video loop autoPlay muted src={v1}></video>
                     </div>
                     <div className="v-txt col-center">
-                        <div className="v-b-txt col-center ">
+                        <motion.div
+                            initial={{ opacity: 0, y: 50 }}
+                            whileInView={{ opacity: 1, y: 0, transition: { delay: 0.2, duration: 0.5 } }}
+                            viewport={{ once: false ,amount:.5}}
+
+                            className="v-b-txt col-center ">
                             <h1>Akatsuki</h1>
                             <p>The rogue shinobi who defied the villages—and fate itself.</p>
                             <button>Meet the members</button>
-                        </div>
+                        </motion.div>
                     </div>
                 </div>
                 {/* intro sec */}
                 <div className="intro center">
-                    <div className="i-box i-txt full col-center">
+                    <motion.div
+                        initial={{ opacity: 0, x: -50 }}
+                        whileInView={{ opacity: 1, x: 0, transition: { delay: 0.4, duration: 0.5 } }}
+                        viewport={{ once: false ,amount:.5}}
+                        className="i-box i-txt full col-center">
                         <h1>Introduction Section</h1>
                         <p>The Akatsuki, originally formed by Yahiko during the Third Great Ninja War, began as a group seeking peace for the war-torn Hidden Rain Village. However, after Yahiko's death, leadership passed to Nagato (Pain), and the group’s ideology shifted drastically. Under Nagato, the Akatsuki became a powerful rogue organization with the goal of capturing all the tailed beasts to create a weapon of mass destruction, which they believed would force the world into peace through fear. The group left a lasting legacy as one of the most dangerous threats to the ninja world, influencing major events and battles, and ultimately playing a crucial role in uniting the shinobi nations against a common enemy.</p>
-                    </div>
-                    <div className="i-box i-pic center">
+                    </motion.div>
+                    <motion.div
+                        initial={{ opacity: 0, x: 50 }}
+                        whileInView={{ opacity: 1, x: 0, transition: { delay: 0.4, duration: 0.5 } }}
+                        viewport={{ once: false ,amount:.5}}
+                        className="i-box i-pic center">
                         <img src={Mod} alt="akatuski group pic" />
-                    </div>
+                    </motion.div>
                 </div>
                 {/* member */}
                 <div className="member full col-center">
@@ -100,7 +113,11 @@ export default function Main() {
                         {member.map((item) => {
                             return (
                                 <>
-                                    <div className="mem-box col-center">
+                                    <motion.div
+                                        initial={{ opacity: 0, y: 50 }}
+                                        whileInView={{ opacity: 1, y: 0, transition: { delay: 0.4, duration: 0.5 } }}
+                                        viewport={{ once: false ,amount:.5}}
+                                        className="mem-box col-center">
                                         <div className="m-top">
                                             <img src={item.pic} alt={item.nam} />
                                         </div>
@@ -108,7 +125,7 @@ export default function Main() {
                                             <h3>{item.nam}</h3>
                                             <p>{item.place}</p>
                                         </div>
-                                    </div>
+                                    </motion.div>
                                 </>
                             )
                         })}
@@ -118,7 +135,11 @@ export default function Main() {
                 <div className="lore full col-center">
                     <h1>lore</h1>
                     {/* f-box */}
-                    <div className="lo-cover col-center lo-cover1">
+                    <motion.div
+                        initial={{ opacity: 0, y: 50 }}
+                        whileInView={{ opacity: 1, y: 0, transition: { delay: 0.3, duration: 0.5 } }}
+                        viewport={{ once: false ,amount:.5}}
+                        className="lo-cover col-center lo-cover1">
                         <div className="lo-c-top center">
                             <div className="lo-pic">
                                 <img src={Lore1} alt="group pic" />
@@ -131,9 +152,13 @@ export default function Main() {
                         <div className="lo-c-bot center">
                             <p>force dedicated to achieving peace through control, fear, and domination. The Akatsuki would go on to become one of the most dangerous and influential organizations in the shinobi world.</p>
                         </div>
-                    </div>
+                    </motion.div>
                     {/* s-box */}
-                    <div className="lo-cover col-center lo-cover2">
+                    <motion.div 
+                     initial={{opacity:0,y:50}}
+                    whileInView={{opacity:1,y:0,transition:{delay:0.3,duration:0.5}}}
+                    viewport={{once:false,amount:.5}}
+                    className="lo-cover col-center lo-cover2">
                         <div className="lo-c-top center">
                             <div className="lo-pic">
                                 <img src={Lore2} alt="group pic" />
@@ -146,9 +171,13 @@ export default function Main() {
                         <div className="lo-c-bot center">
                             <p>fighting for peace in their homeland quickly became a rogue collective of rogue ninja with a singular, dangerous goal—capturing the Tailed Beasts to gain unimaginable power.</p>
                         </div>
-                    </div>
+                    </motion.div>
                     {/* t-box */}
-                    <div className="lo-cover col-center lo-cover3">
+                    <motion.div 
+                     initial={{opacity:0,y:50}}
+                    whileInView={{opacity:1,y:0,transition:{delay:0.3,duration:0.5}}}
+                    viewport={{once:false,amount:.5}}
+                    className="lo-cover col-center lo-cover3">
                         <div className="lo-c-top center">
                             <div className="lo-pic">
                                 <img src={Lore3} alt="group pic" />
@@ -162,12 +191,16 @@ export default function Main() {
                             <p>that plagued the land. To accomplish this, the organization would stop at nothing, utilizing their individual talents, ruthlessness, and cunning to accomplish their mission.</p>
                             <p>However, the true nature of the Akatsuki was far from unified, with each member possessing their own motives and objectives. Some, like Orochimaru, were driven by personal ambition, seeking immortality or the mastery of forbidden jutsu. Others, like Itachi Uchiha, were tragic figures, bound by their own personal sacrifices and hidden agendas.</p>
                         </div>
-                    </div>
+                    </motion.div>
                 </div>
                 {/* gallery */}
                 <div className="gallery full col-center">
                     <h1>gallery</h1>
-                    <div className="g-cover center">
+                    <motion.div
+                     initial={{opacity:0,y:50}}
+                    whileInView={{opacity:1,y:0,transition:{delay:0.4,duration:0.5}}}
+                    viewport={{once:false,amount:.5}}
+                    className="g-cover center">
                         <div className="g-sub g-sub1 col-center">
                             {gal1.map((item) => {
                                 return (
@@ -201,10 +234,10 @@ export default function Main() {
                                 )
                             })}
                         </div>
-                    </div>
+                    </motion.div>
                 </div>
                 {/* form contact */}
-                 <Contact/>
+                <Contact />
             </section>
         </>
     )

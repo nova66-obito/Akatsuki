@@ -1,5 +1,6 @@
 import React from "react";
 import '../css/members.css';
+import { motion } from "framer-motion";
 // image
 import Pic1 from "../assets/pain.png";
 import Pic2 from "../assets/dara.png";
@@ -22,9 +23,6 @@ import Min7 from "../assets/min7.png";
 import Min8 from "../assets/min8.png";
 import Min9 from "../assets/min9.png";
 import Min10 from "../assets/min10.png";
-
-
-
 
 export default function Members() {
   const member = [
@@ -59,7 +57,12 @@ export default function Members() {
           {member.map((item,j) => {
             return (
               <>
-                <div className={`m-holder m-hold${item.box} center`}>
+                <motion.div
+                initial={{opacity:0,x:-50}}
+                whileInView={{opacity:1,x:0, transition: { delay:0.2, duration:0.3 } }}
+                viewport={{once:false , amount:0.3}}
+                
+                className={`m-holder m-hold${item.box} center`}>
                   <div className="h-left col-center min-pic">
                     {minmem.map((val, i) => {
                       return (
@@ -98,7 +101,7 @@ export default function Members() {
                       </div>
                     </div>
                   </div>
-                </div>
+                </motion.div>
               </>
             )
           })}

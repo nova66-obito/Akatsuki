@@ -3,12 +3,17 @@ import '../css/lore.css';
 import Group from "../assets/group.jfif";
 import Lore1 from "../assets/l1.jfif";
 import Lore2 from "../assets/lore4.jpeg";
+import { motion } from "framer-motion";
 export default function Lore() {
     return (
         <>
             <main className="col-center lore-page full">
                 {/*this for the leader  */}
-                <div className="creater col-center full">
+                <motion.div
+                initial={{opacity:0,y:50}}
+                whileInView={{opacity:1,y:0,transition:{delay:0.3,duration:0.3}}}
+                viewport={{once:false ,amount:0.3}}
+                className="creater col-center full">
                     <h1>The Founders: Yahiko, Konan, and Nagato</h1>
                     <div className="found-img">
                         <img src={Lore1} alt="founder" />
@@ -24,9 +29,13 @@ export default function Lore() {
                         <p>A cunning manipulator, Obito gradually led Nagato away from the path of peace, exploiting his sorrow to lure him into a destructive quest for power.</p>
                         <p>Under the name Pain, Nagato transformed the Akatsuki into a formidable criminal organization. Their goal was no longer peace but the collection of the nine bijū to fulfill Obito’s dark plan: the Infinite Tsukuyomi, an illusion designed to enslave humanity!</p>
                     </div>
-                </div>
+                </motion.div>
                 {/* box1 */}
-                <div className="box-story center">
+                <motion.div 
+                initial={{opacity:0,x:-50}}
+                whileInView={{opacity:1,x:0,transition:{delay:0.3,duration:0.3}}}
+                viewport={{once:false ,amount:0.3}}
+                className="box-story center">
                     <div className="l-pic l-box center">
                         <img src={Group} alt="akastuki group" />
                     </div>
@@ -35,9 +44,13 @@ export default function Lore() {
                         <p>At first, the Akatsuki was merely a group of young ninjas striving to bring peace to their war-ravaged village. Unfortunately, their noble mission turned into a nightmare after the death of Yahiko. Manipulated by Obito Uchiha, Nagato transformed the Akatsuki into a criminal organization aiming to dominate the world.</p>
                         <p>But how did their ideals shift so drastically toward violence? Let’s explore the origins and mysteries of the Akatsuki.</p>
                     </div>
-                </div>
+                </motion.div>
                 {/* box2 */}
-                <div className="box-story box-s2 col-center lo-cover2">
+                <motion.div 
+                initial={{opacity:0,y:50}}
+                whileInView={{opacity:1,y:0,transition:{delay:0.3,duration:0.3}}}
+                viewport={{once:false ,amount:0.3}}
+                className="box-story box-s2 col-center lo-cover2">
                     <div className="center top-s-lore lo-c-top">
                         <div className="l-pic lo-pic l-box center">
                             <img src={Lore2} alt="akastuki group" />
@@ -52,7 +65,7 @@ export default function Lore() {
                           <p>Konan, the only female member of the organization, was fiercely loyal to Nagato. Nicknamed the “Angel of God,” she mastered a unique ninjutsu: paper manipulation. Her origami-based offensive and defensive techniques made her almost untouchable.</p>
                           <p>Nagato, the leader of the Akatsuki under the identity of Pain, wielded extraordinary power thanks to his Rinnegan. He controlled six different bodies simultaneously, vastly amplifying his combat abilities. Though he preached peace, he did not hesitate to sacrifice innocent lives... A truly complex character!</p>
                     </div>
-                </div>
+                </motion.div>
                 <div className="story-link">
                      <a href="https://www.cbr.com/naruto-all-akatsuki-members-in-order-deaths/6/" target="-blank">
                      <button>see more</button>
