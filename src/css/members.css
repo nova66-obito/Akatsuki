@@ -1,282 +1,186 @@
+:root{
+ --mem:rgb(255, 255, 255,0.4)
+}
 .members-page {
   padding: 100px 0;
   gap: 20px;
   padding-bottom: 40px;
 }
-.m-holder {
+.mem-cover{
   width: 100%;
-  height: 800px;
-  background: url("../assets/bg1.png") center no-repeat;
+  height: 100dvh;
+  background: url(../assets/fog.jfif) center no-repeat;
   background-size: cover;
-  padding: 30px;
-  position: relative;
 }
-.m-holder > div {
-  transform: translateX(-34px);
+.mem-s-box{
+  height: 90%;
+  transform: translateX(-50px);
 }
-.h-left {
+.mem-cover > .min-pic{
   width: 10%;
-  height: 100%;
-  padding: 30px 0;
-  align-items: flex-end;
+  justify-self: flex-end;
 }
-.min-p-hold > img {
+.min-pic > .min-hold{
+   height: 10%;
+   align-self: end; 
+}
+.min-hold > img{
   width: 100%;
-  height: 70px;
+  height: 100%;
+  object-fit: contain;
+  cursor: pointer;
+  &:hover{
+    scale: 1.1;
+    filter: drop-shadow(0 0 5px red);
+    transition: all 0.3s;
+  }
 }
-.h-right {
-  width: 90%;
-  min-height: 100%;
-  background: rgb(255, 255, 255, 0.3);
+.mem-cover > .min-details{
+  width: 80%;
+  background:var(--mem);
   border-radius: 20px;
   overflow: hidden;
-}
-.min-holder {
-  width: 60px;
-  height: 130px;
   position: relative;
-  background: var(--fot);
-  top: 30px;
-  border-radius: 0 30px 30px 0;
+}
+.min-details > .d-style{
+  width: 60px;
+  height: 120px;
+  position: absolute;
+  top:50px;
+   background: url(../assets/fog.jfif) center no-repeat;
+   background-size: cover;
+  border-radius: 0 20px 20px 0;
   z-index: 1;
-}
-.m-hold2 {
-  background: url(../assets/storm.jfif) no-repeat center;
-  background-size: cover;
-}
-.m-hold4,
-.m-hold10 {
-  background: url(../assets/leaf.jpg) no-repeat center;
-  background-size: cover;
-}
-.m-hold7,
-.m-hold2 {
-  background: url(../assets/storm.jfif) no-repeat center;
-  background-size: cover;
-}
-.m-hold8 {
-  background: url(../assets/mist.jfif) no-repeat center;
-  background-size: cover;
-}
-.m-hold6 {
-  background: url(../assets/sand.jfif) no-repeat center;
-  background-size: cover;
-}
-.m-hold9 {
-  background: url(../assets/fog.jfif) no-repeat center;
-  background-size: cover;
-}
-.m-hold5 {
-  background: url(../assets/bg.png) no-repeat center;
-  background-size: cover;
-}
-.m-h-1 {
-  top: 100px;
-}
-.m-h-2 {
-  top: 150px;
-}
-.m-h-3 {
-  top: 200px;
-}
-.m-h-4 {
-  top: 250px;
-}
-.m-h-5 {
-  top: 300px;
-}
-.m-h-6 {
-  top: 350px;
-}
-.m-h-7 {
-  top: 380px;
-}
-.m-h-8 {
-  top: 400px;
-}
-.m-h-9 {
-  top: 450px;
-}
-.min-holder::before {
-  content: "";
-  position: absolute;
-  width: 60px;
-  height: 20px;
-  background: var(--fot);
-  rotate: 25deg;
-  top: -5px;
-  left: -6px;
-  border-radius: 0 18px 0 0;
-  z-index: -1;
-}
-.min-holder::after {
-  content: "";
-  position: absolute;
-  width: 60px;
-  height: 20px;
-  rotate: -25deg;
-  background: var(--fot);
-  bottom: -5px;
-  left: -6.4px;
-  border-radius: 0 0 15px 0;
-  z-index: -1;
-}
-.m-hold1 > .h-left > .min-p0 {
-  display: none;
-}
-.m-hold2 > .h-left > .min-p1 {
-  display: none;
-}
-.m-hold3 > .h-left > .min-p2 {
-  display: none;
-}
-.m-hold4 > .h-left > .min-p3 {
-  display: none;
-}
-.m-hold5 > .h-left > .min-p4 {
-  display: none;
-}
-.m-hold6 > .h-left > .min-p5 {
-  display: none;
-}
-.m-hold7 > .h-left > .min-p6 {
-  display: none;
-}
-.m-hold8 > .h-left > .min-p7 {
-  display: none;
-}
-.m-hold9 > .h-left > .min-p8 {
-  display: none;
-}
-.m-hold10 > .h-left > .min-p9 {
-  display: none;
-}
-
-/* minholder */
-.min-holder > img {
-  width: 130%;
-  height: 100px;
-}
-/* h-rigth text */
-.h-r-txt {
-  width: 70%;
-  padding: 0 0 0 100px;
-  align-self: flex-start;
-  transform: translateY(-40px);
-}
-.h-r-txt > p {
-  letter-spacing: 0.5px;
-  margin-bottom: 5px;
-  line-height: 30px;
-  font-family: "JMH Typewriter";
-  color: var(--fot);
-  font-weight: bolder;
-  font-size: 23px;
-}
-.h-r-txt > p::before {
-  content: "*";
-}
-.h-r-txt > h1 {
-  font-family: var(--head);
-  font-size: 40px;
-  position: relative;
-  display: inline;
-  color: var(--txt);
-}
-.h-r-txt > h1::after{
-    width: 100%;
-    height: 3px;
-    border-radius: 5px;
-    background: var(--sec);
-    content: "";
+  &::before{
+    content: '';
     position: absolute;
-    bottom: -1px;
-    left: 0;
+     background: url(../assets/fog.jfif) center no-repeat;
+      background-size: cover;
+    height: 30px;
+    width: 100%;
+    rotate: 20deg;
+    top:-8px;
+    left:-10px;
+    border-radius: 0 10px 0 0;
+    z-index: -1;
+  }
+   &::after{
+    content: '';
+    position: absolute;
+    background: url(../assets/fog.jfif) center no-repeat;
+    background-size: cover;
+    height: 30px;
+    width: 100%;
+    rotate: -20deg;
+    bottom:-8px;
+    left:-10px;
+    border-radius: 0 0 10px 0;
+    z-index: -1;
+  }
 }
-/* this for the h-rigth image*/
-.h-r-pic {
-  width: 30%;
-  transform: translateY(-40px);
-  height: 600px;
-}
-.h-r-h-0 > .h-r-pic > img{
+.d-style > img{ 
+  width: 90%;
+  height: 80%;
   object-fit: cover;
 }
-.h-r-pic > img {
+/* details */
+.d-cover > .d-box{
+  height: 100dvh;
+}
+.call{
+  animation:txt_zoom 1 2s forwards;
+}
+.call2{
+   animation:txt_zoom2 1 2s forwards;
+}
+@keyframes txt_zoom {
+  from{
+    transform: translatey(1000px);
+    opacity: 0.4;
+  }
+  to{
+     transform: translatey(0px);
+    opacity: 1;
+  }
+}
+@keyframes txt_zoom2 {
+   from{
+    transform: translatex(-1000px);
+    opacity: 0.4;
+  }
+  to{
+    transform: translatex(0px);
+    opacity: 1;
+  }
+}
+.d-cover{
   width: 100%;
   height: 100%;
+}
+.d-cover > .d-txt{
+  padding-left: 70px;
+  width: 70%;
+  align-items: flex-start;
+}
+.d-txt > p{
+  font-size: 24px;
+  letter-spacing: 0.4px;
+  line-height: 30px;
+  margin-bottom: 10px;
+  &::before{
+    content:"*";
+    color: red;
+  }
+}
+.d-txt > h1{
+  font-family: var(--head);
+  font-size: 35px;
+  padding-bottom: 20px;
+}
+.d-cover > .d-pic{
+  width: 30%;
+}
+.d-pic > img{
+  width: 100%;
+  height: 80%;
+  object-fit: contain;
 }
 
 /* tab */
-@media screen and (max-width: 900px) and (min-width: 600px) {
-    .m-holder{
-        height: 820px;
-    }
-    .members-page{
-        padding-top: 100px;
-        padding-bottom: 30px;
-    }
-    .h-r-pic > img{
-        height: 650px;
-    }
-    .h-r-txt > p {
-        line-height: 25px;
-        font-size: 18px;
-        letter-spacing: 0;
-    }
-    .h-r-txt > h1 {
-        font-size: 30px;
-    }
-}
-/* mobile */
-@media screen and (max-width: 700px) and (min-width: 300px) {
-  .members-page{
-    padding-top: 75px;
-    padding-bottom: 20px;
-  }
-    .m-holder{
-     height:380px;
-  }
-    .h-left{
-    display: none;
-  }
-  .h-r-pic{
-    display: none;
-  }
-  .m-holder > div{
-    transform: none;
-  }
-  .m-holder{
-    padding: 10px;
-  }
-  .h-r-txt {
-    padding: 10px;
-    width: 90%;
-    transform: none;
-    align-self: center;
-  }
-  .h-right{
-    width: 100%;
-  }
-  .h-r-txt > p {
-    font-size: 12px;
-    line-height:normal;
-    padding-top: 3px;
-    color: var(--fot);
-  }
-  .h-r-txt > h1{
-    font-size: 23px;
-    text-align: center;
-    display: block;
-    color:var(--txt);
-  }
-  .min-holder{
-    display: none;
-  }
-  
-}
-@media screen and (max-width: 700px) and (min-width: 500px) {
- .h-r-txt > p {
+
+@media screen and (max-width:900px) and (min-width:700px) {
+   .mem-cover{
+    height: 90dvh;
+   }
+   .d-txt > p {
     font-size: 15px;
+    line-height: 20px;
+   }
+   .d-txt > h1{
+     font-size: 30px;
+   }
 }
+@media screen and (max-width:700px) and (min-width:300px) {
+    .mem-cover{
+    height: 75dvh;
+   }
+   .d-txt > p {
+    font-size: 10px;
+    line-height: 10px;
+    margin-bottom: 5px;
+   }
+   .d-txt > h1{
+     font-size: 25px;
+     padding-bottom: 10px;
+   }
+   .mem-s-box{
+       transform: translateX(-10px);
+   }
+   .d-style
+   {
+    display: none;
+   }
+   .d-cover > .d-txt{
+    padding-left: 18px;
+   }
 }
