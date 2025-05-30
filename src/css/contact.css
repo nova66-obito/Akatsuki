@@ -15,7 +15,7 @@
     font-size: 20px;
 }
 .suc-cover{
-    min-height: 300px;
+    height: 400px;
     width: 100%;
 }
 @media screen and (max-width:700px) {

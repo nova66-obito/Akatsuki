@@ -39,7 +39,7 @@ export default function Contact(){
         }
 
         if(val){
-            console.log("details:",{name,message})
+            console.log("details:",{name,email,phone,message})
             setsubmit(!submit);
             setName("");
             setMessage("");

@@ -32,6 +32,7 @@ import g9 from "../assets/g9.jpg";
 import g10 from "../assets/g10.jpg";
 // video
 import v1 from "../assets/mvid.mp4"
+import { Link } from "react-router-dom";
 export default function Main() {
     // memeber
     const member = [
@@ -130,6 +131,7 @@ export default function Main() {
                             )
                         })}
                     </div>
+                    <Link to="members"><button>see details</button></Link>
                 </div>
                 {/* lore*/}
                 <div className="lore full col-center">
@@ -199,7 +201,7 @@ export default function Main() {
                     <motion.div
                      initial={{opacity:0,y:50}}
                     whileInView={{opacity:1,y:0,transition:{delay:0.4,duration:0.5}}}
-                    viewport={{once:false,amount:.5}}
+                    viewport={{once:true,amount:.5}}
                     className="g-cover center">
                         <div className="g-sub g-sub1 col-center">
                             {gal1.map((item) => {

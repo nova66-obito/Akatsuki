@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useState } from 'react'
 import './App.css'
 import Nav from "../src/components/navbar/navbar"
@@ -10,14 +10,21 @@ import Members from '../src/pages/member';
 import Lore from '../src/pages/lore';
 import Gallery from './pages/gallery';
 import Contact from "./pages/contact";
+import TrueFocus from './pages/start';'../src/pages/start';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 function App() {
+  const [count, setCount] = useState(true);
+  useEffect(function(){
+    setTimeout(()=>{
+      setCount(false);
+    },6000)
+  },[])
   return (
     <>
       <BrowserRouter>
           <Nav Logo={Logo}/>
           <Routes>
-             <Route path={'/'} element={<Main/>}/>
+             <Route path={'/'} element={count?<TrueFocus />:<Main/>}/>
              <Route path={'members'} element={<Members/>}/>
              <Route path={'lore'} element={<Lore/>}/>
              <Route path={'gallery'} element={<Gallery/>}/>

@@ -135,6 +135,16 @@
 .mem-box:hover > .m-bot > h3{
    text-decoration: underline red;
 }
+.member > a > button{
+   padding: 10px 30px;
+   font-family: var(--head);
+   background: var(--txt);
+   border: none;
+   box-shadow: inset 0 0 5px black;
+   border-radius: 10px;
+   cursor: pointer;
+   color:var(--sec);
+}
 /* ---------------------------------------------------------------------- */
 /* lore */
 .lore{
