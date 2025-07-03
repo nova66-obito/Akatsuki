@@ -85,7 +85,7 @@ export default function Main() {
                             className="v-b-txt col-center ">
                             <h1>Akatsuki</h1>
                             <p>The rogue shinobi who defied the villages—and fate itself.</p>
-                            <button>Meet the members</button>
+                            <Link to="members"><button>Meet the members</button></Link>
                         </motion.div>
                     </div>
                 </div>

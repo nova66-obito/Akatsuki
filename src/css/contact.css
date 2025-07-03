@@ -18,6 +18,12 @@
     height: 400px;
     width: 100%;
 }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 @media screen and (max-width:700px) {
     .contact-page{
         padding-top: 80px;

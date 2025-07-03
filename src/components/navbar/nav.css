@@ -14,6 +14,9 @@
   font-size: 30px;
   font-weight: 400;
   font-family: 'Gang of Three', sans-serif;
+  background: url(../../assets/wave.svg);
+  color: transparent;
+  background-clip: text;
 }
 /* this for the tzt nav */
 .n-gater {
