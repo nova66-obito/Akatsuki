@@ -11,7 +11,7 @@ import Lore from '../src/pages/lore';
 import Gallery from './pages/gallery';
 import Contact from "./pages/contact";
 import TrueFocus from './pages/start';'../src/pages/start';
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Router, Routes } from "react-router-dom";
 function App() {
   const [count, setCount] = useState(true);
   useEffect(function(){
@@ -21,7 +21,7 @@ function App() {
   },[])
   return (
     <>
-      <BrowserRouter>
+      <HashRouter>
           <Nav Logo={Logo}/>
           <Routes>
              <Route path={'/'} element={count?<TrueFocus />:<Main/>}/>
@@ -31,7 +31,7 @@ function App() {
              <Route path={'contact'} element={<Contact/>}/>
           </Routes>
           <Footer/>
-      </BrowserRouter>
+      </HashRouter>
     </>
   )
 }
